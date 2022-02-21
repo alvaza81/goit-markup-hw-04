@@ -9,6 +9,7 @@
   --secondary-bg-color: #f5f4fa;
   --akcent-bg-color: #2196f3;
   --futer-bg-color: #2f303a;
+  --svg-icon-fill: #afb1b8;
 }
 
 /* серый-с прозрачностью цвет текста в адресе rgba(255, 255, 255, 0.6); */
@@ -323,6 +324,47 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+.client-list {
+  display: flex;
+}
+.client-list .item {
+  width: calc((100% - 150px) / 6);
+  margin-right: 30px;
+  /* }
+
+.client-item { */
+}
+.client-list .item:nth-child(6n) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.client-button {
+  background-color: var(--primary-bg-color);
+  color: var(--svg-icon-fill);
+  cursor: pointer;
+  padding: 16px 32px;
+  border: 1px solid var(--svg-icon-fill);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.client-button:hover,
+.client-button:focus {
+  border: 1px solid var(--akcent-text-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: var(--akcent-text-color);
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 /* ФУТЕР */
