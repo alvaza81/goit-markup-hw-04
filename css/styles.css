@@ -480,7 +480,40 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 }
 
-.join-link {display: block;}
+.join-link {padding-top: 12px;}
+
+.container-footer {display: flex;}
+.adres-box {margin-right: 70px;}
+
+.join-list {
+  display: flex;
+  padding: 0;
+}
+.join-list .item {
+  display: block;
+  width: calc((100% - 30px) / 4);
+  margin-right: 10px;
+    
+}
+.join-list .item:nth-child(4n) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.join-list .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--wite-text-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join-list .link:hover,
+.join-list .link:focus {background-color: var(--akcent-bg-color);
+fill: var(--wite-text-color); }
 
 
 /* portfolio */
