@@ -229,6 +229,12 @@ body {
 .feature-list .item + .item {
   margin-left: 30px;
 }
+.feature-icon {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background: var(--secondary-bg-color);
+  border-radius: 4px;
+}
 
 .feature-list .title {
   margin-top: 0;
